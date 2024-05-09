@@ -1,0 +1,113 @@
+
+body{
+  
+    width: 1000px ;height: 950px; margin: auto;
+  }
+    h1 {
+        padding: 1px;
+        text-align: center;
+    }
+ 
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        background-color: #9ACD32;
+        width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+        border: 9px solid #000;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    
+     
+    .box {
+        width: 200px; 
+        height: 80px;
+        background-color: #ffffff;
+        margin: 1%;
+        border: 1px solid #000
+
+        
+    }
+      
+    header {
+        display: flex;
+        background-color: #00008B;
+        width: 1000px;
+        height: 300px;
+        margin: 0 auto;
+        border: 9px solid #000;
+        font-family: 'Roboto', sans-serif;
+    }
+      
+    .banner {
+        width: 800px; 
+        background-color: #ffffff;
+        margin: 1%;
+        padding: 90px;
+        border: 1px solid #000
+    }
+      
+    .content_banner {
+        width: 200px; 
+        background-color: blue;
+        margin: 1%;
+        
+    }
+      
+    .logo {
+        background-color: #ffffff;
+        margin: 1%;
+        padding: 1px;
+        border: 1px solid #000
+    }
+      
+    .login {
+        background-color: #ffffff;
+        margin: 1%;
+        padding: 7px;
+        border: 1px solid #000
+    }
+      
+    form {
+        background-color: #ffffff;
+        margin: 1px;
+        padding: 1px;
+        border: 1px solid #000
+    }
+
+    main {
+        width: 1000px;
+        height: 500px;
+        display: flex;
+        background-color: rgb(111, 111, 111);
+        margin: 0 auto;
+        border: 9px solid #000;
+        font-family: 'Roboto', sans-serif;
+    }
+      
+    aside {
+        width: 300px; 
+        background-color: #ffffff;
+        margin: 1%;
+        
+        padding-top: 200px;
+        border: 1px solid #000
+    }
+      
+    article {
+        width: 500px; 
+        background-color: #ffffff;
+        margin: 1%;
+        padding-top: 200px;
+        border: 1px solid #000
+    }
+      
+    footer {
+        width: 1000px;
+        height: 50px;
+        background-color: 	#FF4500;
+        margin: 0 auto;
+        border: 9px solid #000;
+    }

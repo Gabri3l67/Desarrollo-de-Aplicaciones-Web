@@ -1,0 +1,84 @@
+body{
+    width: 750px ;height: 800px; margin: auto;
+
+}
+h1{
+    padding: 70px;
+    text-align: center;
+
+}
+header{
+    width: 750px;
+    height: 250px;
+    display: flex;
+    background-color: #00008B;
+    font-family: 'Roboto', sans-serif;
+    border: 9px solid #000;
+    
+}
+.banner{
+    width: 500px; 
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid #000
+
+}
+.logo{
+    width: 250px; 
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  
+  
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid #000
+}
+nav{
+    width: 750px;
+    height: 50px;
+    background-color: #9ACD32;
+    font-family: 'Roboto', sans-serif;
+    border: 9px solid #000;
+
+}
+main{
+    width: 750px;
+    height: 250px;
+    display: flex;
+    background-color: rgb(143, 143, 143);
+    font-family: 'Roboto', sans-serif;
+    border: 9px solid #000;
+    
+}
+article{
+    width: 450px; 
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid #000
+
+}
+aside{
+    width: 300px; 
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  
+  
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid #000
+}
+footer{
+    width: 750px;
+    height: 50px;
+    background-color: 	#FF4500;
+    border: 9px solid #000;
+
+}
