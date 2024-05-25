@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos y Mapas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- API Key de Google Maps -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzCGzBz5OJc_GSnL3AkaWPVMEpxWHgRxY&callback=initMap"></script>
+</head>
+<body>
+    <header>
+        <h1>Eventos</h1>
+    </header>
+    <main>
+        <section id="event-form">
+            <h2>Agregar Evento</h2>
+            <form id="new-event-form">
+                <label for="event-title">Título del Evento:</label>
+                <input type="text" id="event-title" required>
+                <label for="event-date">Fecha del Evento:</label>
+                <input type="date" id="event-date" required>
+                <label for="event-location">Ubicación del Evento:</label>
+                <input type="text" id="event-location" required>
+                <button type="submit">Agregar Evento</button>
+            </form>
+        </section>
+        <section id="events">
+            <h2>Lista de Eventos</h2>
+            <ul id="event-list"></ul>
+        </section>
+        <section id="map-section">
+            <h2>Mapa</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+</body>
+</html>
