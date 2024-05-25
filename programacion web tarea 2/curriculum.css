@@ -1,0 +1,152 @@
+/* Estilo general */
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2eb63e5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 0; /* Eliminamos el padding superior e inferior */
+}
+
+header {
+    background-color: #115db4;
+    color: white;
+    text-align: center;
+    padding: 10px 20px; /* Reducimos el padding superior e inferior */
+    border-radius: 20px 20px 0 0; /* Bordes redondeados sólo en la parte superior */
+    margin: 0; /* Eliminamos cualquier margen */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.photo img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.info, .experience, .capacidades {
+    flex: 2;
+    padding: 10px;
+}
+
+.info h2, .experience h2, .capacidades h2 {
+    margin-top: 0;
+}
+
+.info h3, .experience h3, .capacidades h3 {
+    margin-top: 1px;
+    text-align: left;
+    color: #000;
+}
+
+.info p, .experience p, .capacidades p {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.datos_p {
+    display: flex;
+}
+
+.datos_p p {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 8px;
+}
+
+/* Nuevas reglas para la sección de experiencia */
+.experience ul {
+    margin-top: 25px;
+    padding-left: 0;
+}
+
+.experience ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.experience h2, .experience h3 {
+    margin-bottom: 10px;
+}
+
+/* Capacidades */
+.info, .capacidades {
+    flex: 2;
+    padding: 10px;
+}
+
+.info h2, .capacidades h2 {
+    margin-top: 0;
+}
+
+.info h3, .capacidades h3 {
+    margin-top: 1px;
+    text-align: left;
+    color: #000;
+}
+
+.info p, .capacidades p {
+    margin-top: 0;
+}
+/* permisos  */
+.info, .permisos {
+    flex: 2;
+    padding: 10px;
+}
+
+.info h2, .permisos h2 {
+    margin-top: 0;
+}
+
+.info h3, .permisos h3 {
+    margin-top: 1px;
+    text-align: left;
+    color: #000;
+}
+
+.info p, .permisos p {
+    margin-top: 0;
+}
+
