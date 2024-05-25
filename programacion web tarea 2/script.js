@@ -1,10 +1,31 @@
 let map;
 let markers = [];
+let autocomplete;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: -34.397, lng: 150.644 },
         zoom: 8
+    });
+
+    const input = document.getElementById('event-location');
+    autocomplete = new google.maps.places.Autocomplete(input);
+    autocomplete.bindTo('bounds', map);
+
+    autocomplete.addListener('place_changed', function() {
+        const place = autocomplete.getPlace();
+        if (!place.geometry) {
+            alert("No se encontró información de ubicación para: '" + place.name + "'");
+            return;
+        }
+        map.setCenter(place.geometry.location);
+        map.setZoom(17);
+
+        const marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location
+        });
+        markers.push(marker);
     });
 }
 
@@ -17,6 +38,7 @@ document.getElementById('new-event-form').addEventListener('submit', function(ev
 
     addEventToList(title, date, location);
     geocodeAddress(location);
+    this.reset();
 });
 
 function addEventToList(title, date, location) {

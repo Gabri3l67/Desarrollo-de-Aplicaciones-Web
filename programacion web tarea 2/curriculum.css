@@ -46,9 +46,9 @@ header h1 {
 }
 
 .photo img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 2px solid #000;
 }
 
@@ -150,3 +150,25 @@ a:hover {
     margin-top: 0;
 }
 
+/* Footer */
+footer {
+    background-color: #115db4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 20px 20px; /* Bordes redondeados sólo en la parte inferior */
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
