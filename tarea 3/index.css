@@ -1,0 +1,162 @@
+body {
+    background-color: #f8f9fa; /* Color de fondo general */
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: auto; /* Centrar el contenido */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h1 {
+    color: #13d302; /* Color del título principal */
+    text-align: center;
+}
+
+.form-group label {
+    color: #6c757d; /* Color del texto de las etiquetas */
+}
+
+.btn-primary {
+    background-color: #13d302; /* Color de fondo del botón principal */
+    border-color: #13d302; /* Color del borde del botón principal */
+}
+
+.btn-primary:hover {
+    background-color: #13d302; /* Color de fondo del botón principal al pasar el ratón */
+    border-color: #13d302; /* Color del borde del botón principal al pasar el ratón */
+}
+
+.list-group-item {
+    background-color: #ffffff; /* Color de fondo de las tareas */
+    border-color: #dee2e6; /* Color del borde de las tareas */
+    margin-bottom: 10px; /* Margen inferior entre tareas */
+}
+
+.pending-task {
+    border-left: 5px solid #1e6ed6; /* Borde izquierdo para tareas pendientes */
+}
+
+.completed-task {
+    border-left: 5px solid #28a745; /* Borde izquierdo para tareas completadas */
+}
+.expired-task{
+    border-left: 5px solid #721c24;/*Borde izquierdo para tareas sin resolver*/
+}
+
+.btn-expired{
+    background-color: #721c24;
+    border-color: #721c24;
+}
+
+.btn-success {
+    background-color: #28a745; /* Color de fondo del botón de resolver */
+    border-color: #28a745; /* Color del borde del botón de resolver */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Color de fondo del botón de desmarcar */
+    border-color: #6c757d; /* Color del borde del botón de desmarcar */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Color de fondo del botón de eliminar */
+    border-color: #dc3545; /* Color del borde del botón de eliminar */
+}
+
+.btn-success:hover, .btn-secondary:hover, .btn-danger:hover {
+    filter: brightness(90%); /* Cambio de brillo al pasar el ratón */
+}
+
+/* Estilos para el mensaje de confirmación */
+#message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 300px;
+}
+
+.alert {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.alert-success {
+    background-color: #28a745; /* Color de fondo para mensajes de éxito */
+    border-color: #218838; /* Color del borde para mensajes de éxito */
+    color: #ffffff; /* Color del texto para mensajes de éxito */
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212; /* Color de fondo general en modo oscuro */
+        color: #ffffff; /* Color de texto general en modo oscuro */
+    }
+
+    .container {
+        background-color: #1e1e1e; /* Fondo del contenedor en modo oscuro */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Sombra en modo oscuro */
+    }
+
+    h1 {
+        color:#9623ad; /* Color del título principal en modo oscuro */
+    }
+
+    .form-group label {
+        color: #b0b0b0; /* Color del texto de las etiquetas en modo oscuro */
+    }
+
+    .btn-primary {
+        background-color: #630975; /* Color de fondo del botón principal en modo oscuro */
+        border-color: #630975; /* Color del borde del botón principal en modo oscuro */
+    }
+
+    .btn-primary:hover {
+        background-color: #630975; /* Color de fondo del botón principal al pasar el ratón en modo oscuro */
+        border-color: #630975; /* Color del borde del botón principal al pasar el ratón en modo oscuro */
+    }
+
+    .list-group-item {
+        background-color: #2c2c2c; /* Color de fondo de las tareas en modo oscuro */
+        border-color: #444444; /* Color del borde de las tareas en modo oscuro */
+    }
+
+    .pending-task {
+        border-left: 5px solid #1e6ed6; /* Borde izquierdo para tareas pendientes en modo oscuro */
+    }
+
+    .completed-task {
+        border-left: 5px solid #03dac6; /* Borde izquierdo para tareas completadas en modo oscuro */
+    }
+
+    .expired-task {
+        border-left: 5px solid #cf6679; /* Borde izquierdo para tareas vencidas en modo oscuro */
+    }
+
+    .btn-success {
+        background-color: #03dac6; /* Color de fondo del botón de resolver en modo oscuro */
+        border-color: #03dac6; /* Color del borde del botón de resolver en modo oscuro */
+    }
+
+    .btn-secondary {
+        background-color: #b0b0b0; /* Color de fondo del botón de desmarcar en modo oscuro */
+        border-color: #b0b0b0; /* Color del borde del botón de desmarcar en modo oscuro */
+    }
+
+    .btn-danger {
+        background-color: #cf6679; /* Color de fondo del botón de eliminar en modo oscuro */
+        border-color: #cf6679; /* Color del borde del botón de eliminar en modo oscuro */
+    }
+
+    .alert-success {
+        background-color: #03dac6; /* Color de fondo para mensajes de éxito en modo oscuro */
+        border-color: #03dac6; /* Color del borde para mensajes de éxito en modo oscuro */
+        color: #121212; /* Color del texto para mensajes de éxito en modo oscuro */
+    }
+}
